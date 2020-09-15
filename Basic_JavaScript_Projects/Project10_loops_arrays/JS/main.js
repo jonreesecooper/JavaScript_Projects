@@ -1,4 +1,4 @@
-function Call_Loop() {
+function Call_Loop() { //This is an example of a function that uses the while loop
     var decreaser = "";
     var Y = 10;
     while (Y > -1) {
@@ -7,6 +7,7 @@ function Call_Loop() {
     }
     document.getElementById("Loop").innerHTML = decreaser;
 }
+//The following is an example of a function that includes a for loop
 var Instruments = ["Bass", "More bass", "Even more bass", "And even more bass", "bass is the only instrument you need"];
 var Content = "";
 var X;
@@ -17,7 +18,7 @@ function for_Loop () {
     document.getElementById("List_of_instruments").innerHTML = Content;
 }
 
-function array_Function() {
+function array_Function() { //This is a function that utilizes an array
     var possible_instruments = [];
     possible_instruments[0] = "guitar";
     possible_instruments[1] = "bass";
@@ -27,14 +28,14 @@ function array_Function() {
     document.getElementById("Array").innerHTML = "Clearly, Jon prefers the " + possible_instruments[1] + ".";
 }
 
-function constant_function() {
+function constant_function() { //This is an example of a function that utilizes a constant, where a a value is both added and changed
     const Jons_bass = {make:"Ibanez", model:"BTB", color:"purple"};
     Jons_bass.strings = 5;
     Jons_bass.color = "wood finished";
     document.getElementById("Constant").innerHTML = "Jon plays a " + Jons_bass.color + " " + Jons_bass.make + " " + Jons_bass.model + " with " + Jons_bass.strings + " strings.";
 }
 
-var Y = "Bass";
+var Y = "Bass"; //The following is an example of global scope variable and a let keyword with a block scope
 document.write(Y);
 {
     let Y = "Bass guitar"
@@ -42,13 +43,15 @@ document.write(Y);
 }
 document.write("<br>" + Y);
 
-let car = {
-    make: "Dodge ",
-    model: "Viper ",
-    year: "2021 ",
-    color: "red ",
+let guitar = { //The following is an example of a let keyword used in a function to call it's values
+    make: "LTD ",
+    model: "EC256 ",
+    year: "2018 ",
+    color: "black ",
     description: function () {
-        return "The car is a " + this.year + this.color +this.make +this.model;
+        return "Jon's guitar  is a " + this.year + this.color +this.make +this.model;
     }
 };
-document.getElementById("Car_Object").innerHTML = car.description();
+function getGuitar() {
+    document.getElementById("Guitar_Object").innerHTML = guitar.description();
+}
