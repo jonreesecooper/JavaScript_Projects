@@ -32,3 +32,25 @@ function Toppings_Function() {
     }
     document.getElementById("Output").innerHTML = Toppings_Output;
 }
+
+function class_function(_) {
+    var X = document.getElementsByClassName("Change");
+    X[1].innerHTML = "Told ya so!";
+}
+
+function my_canvas() {
+    var c = document.getElementById("my_canvas");
+    var ctx = c.getContext("2d");
+    var img = document.getElementById("hollowpoint");
+    ctx.drawImage(img, 10, 10);
+}
+
+var d = document.getElementById("newcanvas");
+var dtx = d.getContext("2d");
+
+var grd = dtx.createLinearGradient(0,0,170,0);
+grd.addColorStop(0, "red");
+grd.addColorStop(1, "blue");
+
+dtx.fillStyle = grd;
+dtx.fillRect(20,20,150,100);

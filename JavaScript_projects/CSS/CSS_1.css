@@ -1,0 +1,74 @@
+
+h1 {
+    color: rgb(15, 82, 226);
+}
+
+p {
+    color: rgb(15, 82, 226);
+    font-size: large;
+}
+
+input[type=text] {
+    font-size: large;
+    border: 10px solid black;
+    border-radius: 8px;
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    background-color:rgb(15, 82, 226);
+    color:white;
+}
+
+input[type=text]:hover {
+    color: rgb(15, 82, 226);
+    background-color: white;
+    border: 2px solid rgb(15,82,226);
+    border-radius: 8px;
+}
+
+select {
+    font-size: large;
+    border: 10px solid black;
+    border-radius: 8px;
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    background-color:rgb(15,82,226);
+    color:white;
+}
+
+select:hover {
+    color: rgb(15, 82, 226);
+    background-color: white;
+    border: 2px solid rgb(15,82,226);
+    border-radius: 8px;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+    border: 5px solid black;
+    border-radius: 8px;
+    font-size: large;
+    background-color: rgb(15,82,226);
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+  input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover {
+      color: rgb(15, 82, 226);
+      background-color: white;
+      border: 2px solid rgb(15,82,226);
+      border-radius: 8px;
+  }
+
+  label {
+      color: rgb(15,82,226);
+      font-size: large;
+  }
