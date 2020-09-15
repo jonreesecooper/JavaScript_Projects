@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="JavaScript/JavaScript_2.js" defer></script>
+        <link rel="stylesheet" type ="text/css" href="CSS/CSS_1.css">
+    </head>
+    <body>
+        <h1>Enter your information below.</h1>
+            <form name="myform" action="" onsubmit="return validateForm()" method="post">
+                <p>Select your country of origin:</p>
+                <select id="country" name="country">
+                    <option value="mx">Mexico</option>
+                    <option value="ca">Canada</option>
+                    <option value="usa">United States</option>
+                </select><br><br>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" value=""><br><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" value=""><br><br>
+                <label for="email">Email:</label><br>
+                <input type="text" id="email"name="email" value=""><br><br>
+                <label for="phone">Phone number:</label><br>
+                <input type="text" id="phone" name="phone" value=""><br><br>
+                <input type="submit" value="Submit">
+            </form> 
+    </body>
+</html>
